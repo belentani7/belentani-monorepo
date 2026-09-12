@@ -15,7 +15,7 @@
       "@belentani/*": ["packages/*/src"],
       "@/*": ["./src"]
     },
-    "types": ["node", "vite/client"]
+    "types": ["node"]
   },
   "exclude": ["node_modules", "dist", ".turbo", "**/dist/**", "**/.next/**"]
 }
