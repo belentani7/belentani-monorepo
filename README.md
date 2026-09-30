@@ -1,23 +1,33 @@
 # belentani-monorepo
 
-Belentani monorepo: UX Academy + ManosAbiertas + Belentani platforms. TurboRepo, Next.js, TypeScript.
+Monorepo del ecosistema Belentani.
 
-## Stack
+## Qué es
 
-- Primary language: Java
-- Node project (`package.json` present)
+Un solo repositorio para varios paquetes del ecosistema, con el objetivo de compartir
+tipos y configuración en vez de duplicarlos.
 
-## Getting started
+## Estructura
 
-```bash
-git clone https://github.com/belentani7/belentani-monorepo.git
 ```
+packages/          paquetes compartidos
+neon-mantra/       pieza propia del monorepo
+tsconfig.base.json configuración TypeScript común
+package.json       raíz del workspace
+```
+
+## Puesta en marcha
 
 ```bash
 npm install
-npm run dev
+npm run build --workspaces
 ```
 
----
+## Nota
 
-License: not specified
+Repositorio pequeño (~362 KB). Es el esqueleto del monorepo: la estructura está puesta, el
+contenido se añade encima.
+
+## Licencia
+
+Sin licencia declarada.
